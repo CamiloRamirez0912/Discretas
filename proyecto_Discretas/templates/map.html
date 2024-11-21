@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_84c9ae9294a23832a3014af1f11f779f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_84c9ae9294a23832a3014af1f11f779f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_84c9ae9294a23832a3014af1f11f779f = L.map(
+                "map_84c9ae9294a23832a3014af1f11f779f",
+                {
+                    center: [5.5353, -73.3678],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f758a9a7f06051c45fc9a18fadf07d6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2f758a9a7f06051c45fc9a18fadf07d6.addTo(map_84c9ae9294a23832a3014af1f11f779f);
+        
+    
+            var marker_0bd75538c729f4df6ca59dbe9dbd6951 = L.marker(
+                [5.54, -73.364],
+                {}
+            ).addTo(map_84c9ae9294a23832a3014af1f11f779f);
+        
+    
+            var icon_00eb8f0a117061de0b2d953eb1c1e142 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0bd75538c729f4df6ca59dbe9dbd6951.setIcon(icon_00eb8f0a117061de0b2d953eb1c1e142);
+        
+    
+        var popup_fda72f959cdae1bdab6f2e1a31dc6a1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6338cf5e36b561a663f4cd545f421daa = $(`<div id="html_6338cf5e36b561a663f4cd545f421daa" style="width: 100.0%; height: 100.0%;">Hospital 1</div>`)[0];
+                popup_fda72f959cdae1bdab6f2e1a31dc6a1a.setContent(html_6338cf5e36b561a663f4cd545f421daa);
+            
+        
+
+        marker_0bd75538c729f4df6ca59dbe9dbd6951.bindPopup(popup_fda72f959cdae1bdab6f2e1a31dc6a1a)
+        ;
+
+        
+    
+    
+            var marker_d1363cb7d060c23197c024dfe217dfbb = L.marker(
+                [5.53, -73.37],
+                {}
+            ).addTo(map_84c9ae9294a23832a3014af1f11f779f);
+        
+    
+            var icon_34c48b9b7cfa84f5e99411393a21a592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1363cb7d060c23197c024dfe217dfbb.setIcon(icon_34c48b9b7cfa84f5e99411393a21a592);
+        
+    
+        var popup_f3a890cebea098ed1db2d643dd09c982 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d85c6f6ee9bfaf1a9ca8f6ff3f357f0 = $(`<div id="html_0d85c6f6ee9bfaf1a9ca8f6ff3f357f0" style="width: 100.0%; height: 100.0%;">Hospital 2</div>`)[0];
+                popup_f3a890cebea098ed1db2d643dd09c982.setContent(html_0d85c6f6ee9bfaf1a9ca8f6ff3f357f0);
+            
+        
+
+        marker_d1363cb7d060c23197c024dfe217dfbb.bindPopup(popup_f3a890cebea098ed1db2d643dd09c982)
+        ;
+
+        
+    
+    
+            var marker_13055f53fb201cf194f6e2360944e75e = L.marker(
+                [5.537, -73.366],
+                {}
+            ).addTo(map_84c9ae9294a23832a3014af1f11f779f);
+        
+    
+            var icon_6b8258d9df6b2554cdfa4c1783c05789 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13055f53fb201cf194f6e2360944e75e.setIcon(icon_6b8258d9df6b2554cdfa4c1783c05789);
+        
+    
+        var popup_025292bfdbaae256362d705104684bc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10a9308436fa05f6c4a68fc525ac2a0f = $(`<div id="html_10a9308436fa05f6c4a68fc525ac2a0f" style="width: 100.0%; height: 100.0%;">Accidente</div>`)[0];
+                popup_025292bfdbaae256362d705104684bc2.setContent(html_10a9308436fa05f6c4a68fc525ac2a0f);
+            
+        
+
+        marker_13055f53fb201cf194f6e2360944e75e.bindPopup(popup_025292bfdbaae256362d705104684bc2)
+        ;
+
+        
+    
+</script>
+</html>
