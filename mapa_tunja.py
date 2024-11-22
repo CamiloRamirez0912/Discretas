@@ -9,8 +9,9 @@ class MapaTunja:
             "Clínica Los Andes": (5.537, -73.367),
             "Clínica Medilaser": (5.544, -73.354),
             "Hospital San Rafael": (5.537, -73.361),
-            "Hospital Metropolitano Santiago de Tunja": (5.544, -73.354)
+            "Hospital Metropolitano Santiago de Tunja": (5.5199296455904, -73.35837279563792)
         }
+
         print("Descargando datos de Tunja desde OpenStreetMap...")
         self.gdf_edges = self._descargar_mapa()
 
