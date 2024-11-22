@@ -1,0 +1,38 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints (si usas notebooks en el proyecto)
+.ipynb_checkpoints/
+
+# Editor settings (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Matplotlib cache
+.matplotlib/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Byte-compiled files
+*.~undo-tree~
+*.swp
+*.swo
