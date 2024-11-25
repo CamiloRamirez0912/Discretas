@@ -1,0 +1,9 @@
+[
+    { "lat": 5.56971680258134, "lng": -73.33649942835989, "nombre": "Clínica Medilaser" },
+    { "lat": 5.544064116858985, "lng": -73.35957745960754, "nombre": "Clínica Los Andes" },
+    { "lat": 5.540642668661298, "lng": -73.3612063596075, "nombre": "Hospital San Rafael" },
+    { "lat": 5.519695313519491, "lng": -73.358365588443, "nombre": "Hospital Metropolitano Santiago de Tunja" },
+    { "lat": 5.558817694480491, "lng": -73.34386574643104, "nombre": "Sub-Estación De Bomberos Z2" },
+    { "lat": 5.534370559291052, "lng": -73.35520254298079, "nombre": "Bomberos Tunja Av Colón Cl 21" },
+    { "lat": 5.51607470490665, "lng": -73.36614665330339, "nombre": "Bomberos Tunja Estación Sur Z3" }
+]
