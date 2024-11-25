@@ -22,34 +22,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Agregar los hospitales con íconos personalizados y eventos
         fetch("/api/hospitals")
-            .then((response) => response.json())
-            .then((hospitals) => {
-                hospitals.forEach((hospital) => {
-                    const marker = new google.maps.Marker({
-                        position: { lat: hospital.lat, lng: hospital.lng },
-                        map: map,
-                        title: hospital.nombre,
-                        icon: {
-                            url: "/static/assets/hospital.png", // Ícono del hospital
-                            scaledSize: new google.maps.Size(30, 30),
-                        },
-                    });
+        .then((response) => response.json())
+        .then((hospitals) => {
+            hospitals.forEach((hospital) => {
+                const iconUrl = hospital.tipo === "hospital"
+                    ? "/static/assets/hospital.png"  
+                    : "/static/assets/firefighter.png"; 
 
-                    // Mostrar el nombre del hospital al pasar el mouse
-                    marker.addListener("mouseover", () => {
-                        infoWindow.setContent(hospital.nombre);
-                        infoWindow.open(map, marker);
-                    });
-
-                    // Cerrar la ventana al quitar el mouse
-                    marker.addListener("mouseout", () => {
-                        infoWindow.close();
-                    });
-
-                    hospitalMarkers.push(marker);
+                const marker = new google.maps.Marker({
+                    position: { lat: hospital.lat, lng: hospital.lng },
+                    map: map,
+                    title: hospital.nombre,
+                    icon: {
+                        url: iconUrl,
+                        scaledSize: new google.maps.Size(30, 30),
+                    },
                 });
-            })
-            .catch((error) => console.error("Error cargando hospitales:", error));
+
+                marker.addListener("mouseover", () => {
+                    infoWindow.setContent(hospital.nombre);
+                    infoWindow.open(map, marker);
+                });
+
+                marker.addListener("mouseout", () => {
+                    infoWindow.close();
+                });
+
+                hospitalMarkers.push(marker);
+            });
+        })
+        .catch((error) => console.error("Error cargando hospitales:", error));
     };
 
     // Buscar dirección y marcar el accidente
